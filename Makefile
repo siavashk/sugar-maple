@@ -1,10 +1,13 @@
 CXX=g++
 CXXFLAGS=-std=c++11
 
-scc:
-	$(CXX) $(CXXFLAGS) scc.cpp -o scc.o
+connectedcomponent:
+	$(CXX) $(CXXFLAGS) connectedcomponent.cpp -o connectedcomponent.o
 
-all: scc
+av:
+	$(CXX) $(CXXFLAGS) articulationvertices.cpp -o articulationvertices.o
+
+all: connectedcomponent av
 
 clean:
 	rm *o
